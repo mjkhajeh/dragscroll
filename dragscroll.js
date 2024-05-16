@@ -65,6 +65,7 @@
                     mousemove,
                     cont.mm = function(e) {
                         if (pushed) {
+                            el.classList.add('dragging');
                             (scroller = el.scroller||el).scrollLeft -=
                                 newScrollX = (- lastClientX + (lastClientX=e.clientX));
                             scroller.scrollTop -=
